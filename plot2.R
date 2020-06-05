@@ -38,7 +38,9 @@ power_data[, date := NULL]
 power_data[, time := NULL]
 
 # Plot
+par(mfrow = c(1, 1))
 par(bg = NA)
+
 with(power_data, plot(datetime,
                       global_active_power,
                       type = "l",

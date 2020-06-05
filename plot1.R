@@ -31,7 +31,9 @@ power_data <- fread("filtered_data.txt",
 setwd("../")
 
 # Plot
+par(mfrow = c(1, 1))
 par(bg = NA)
+
 hist(power_data$global_active_power,
      col = "red",
      main = "Global Active Power",
